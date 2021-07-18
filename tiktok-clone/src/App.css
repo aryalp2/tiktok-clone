@@ -1,0 +1,30 @@
+html{
+  scroll-snap-type: mandatory;
+}
+
+.app{
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
+.app__videos{
+  position: relative;
+  height: 100%;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 800px;
+  overflow: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari adn Opera */
+.app__videos::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar ofr IE, Edge, and Firefox */
+.app__videos {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
